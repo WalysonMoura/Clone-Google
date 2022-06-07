@@ -1,0 +1,157 @@
+@charset"utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.c-header {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-header__section {
+  display: flex;
+  align-items: center;
+}
+
+.c-header__icon {
+  padding: 12px 16px;
+}
+
+.c-header__profile {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-right: 3px;
+}
+
+.c-header__avatar--frame {
+  width: 100%;
+  height: 100%;
+
+}
+
+.c-header__avatar {
+  width: 80%;
+  height: 83%;
+  position: absolute;
+
+}
+
+.c-header__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  padding: 12px 8px;
+}
+
+.c-menu__link--active {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+.menu__link:not(.active) {
+  margin-bottom: 2px;
+}
+
+.c-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 58px 8px 0;
+}
+.c-content__container-search{
+  width: 100%;
+  position: relative;
+  max-width: 736px;
+  display: flex;
+  align-items: center;
+}
+.c-content__search {
+  width: 100%;
+  padding: 7px 10px 6px 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+  border-radius: 25px;
+  border: 1px solid #e0e0e0;
+  outline: 0;
+ 
+}
+.c-content__search--icon{
+  position: absolute;
+  display: block;
+  top: 5;
+  z-index: 2;
+  margin: 0 7px;
+  color: #757575;
+}
+.c-content__search--icon1{
+  left: 0;
+}
+.c-content__search--icon2{
+  right: 0;
+}
+.c-content__logo {
+  width: 20rem;
+}
+
+.c-content__affter {
+  margin-top: 2rem;
+  font-size: 12px;
+  color: #757575;
+}
+
+/* footer */
+.c-footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+}
+
+.c-footer__location {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 10px 12px;
+}
+
+.c-footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  color: #757575;
+  padding: 10px;
+}
+.c-footer__links a {
+  margin-left: 27px;
+  color: #757575;
+}
